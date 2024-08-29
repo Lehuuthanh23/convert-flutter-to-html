@@ -3,53 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Column and Row Widgets in HTML</title>
+    <title>Dynamic Container in HTML</title>
     <link rel="stylesheet" href="test.css">
 </head>
 <body>
+    <div class="column-widget main-axis-center">
+        <div class="dynamic-container"
+        data-background-color="red"
+        data-width="300px"
+        data-height="150px"
+        data-border-radius="10px"
+        data-justify-content="center"
+        data-align-items="center"
+        data-color="yellow"
+        data-padding="30px"
+        data-text-align="center"
+        data-content="First Container"
+        data-border="3px"
+        data-border-color="blue"
+        >
 
-    <div class="row-widget">
-        <div class="row-widget main-axis-space-around cross-axis-center">
-            <div class="column-widget main-axis-center cross-axis-center">
-                <div class="box">Column 1 - Item 1</div>
-                <div class="box">Column 1 - Item 2</div>
-                <div class="box">Column 1 - Item 3</div>
-                <div class="box">Column 1 - Item 4</div>   
-            </div>
-            <div class="column-widget main-axis-center cross-axis-center">
-                <div class="box">Column 2 - Item 1</div>
-                <div class="box">Column 2 - Item 2</div>
-                <div class="box">Column 2 - Item 3</div>
-                <div class="box">Column 2 - Item 4</div>
-            </div>
-            <div class="column-widget main-axis-center cross-axis-center">
-                <div class="box">Column 3 - Item 1</div>
-                <div class="box">Column 3 - Item 2</div>
-                <div class="box">Column 3 - Item 3</div>
-                <div class="box">Column 3 - Item 4</div>
-            </div>
-        </div>
-        <div class="row-widget main-axis-center cross-axis-center">
-            <div class="column-widget main-axis-center cross-axis-center">
-                <div class="box">Column 1 - Item 1</div>
-                <div class="box">Column 1 - Item 2</div>
-                <div class="box">Column 1 - Item 3</div>
-                <div class="box">Column 1 - Item 4</div>   
-            </div>
-            <div class="column-widget main-axis-center cross-axis-center">
-                <div class="box">Column 2 - Item 1</div>
-                <div class="box">Column 2 - Item 2</div>
-                <div class="box">Column 2 - Item 3</div>
-                <div class="box">Column 2 - Item 4</div>
-            </div>
-            <div class="column-widget main-axis-center cross-axis-center">
-                <div class="box">Column 3 - Item 1</div>
-                <div class="box">Column 3 - Item 2</div>
-                <div class="box">Column 3 - Item 3</div>
-                <div class="box">Column 3 - Item 4</div>
-            </div>
-        </div>
+   </div>
+
+   <div class="dynamic-container"
+        data-background-color="yellow"
+        data-width="250px"
+        data-height="100px"
+        data-border-radius="0px"
+        data-justify-content="flex-start"
+        data-align-items="flex-start"
+        data-color="white"
+        data-padding="20px"
+        data-text-align="left"
+        data-border="2px"
+        data-border-color="black">
+        data-content="Second Container">
+   </div>
+
     </div>
     
+    <script src="test.js"></script>
 </body>
 </html>

@@ -10,17 +10,19 @@ body {
 
 /* Default Column Widget Style */
 .column-widget {
+    /* background-color: blue; */
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Khoảng cách giữa các item */
-    width: 100px; /* Đặt chiều rộng cho từng cột */
+    /* gap: 10px; Khoảng cách giữa các item */
+    /* width: 100px; Đặt chiều rộng cho từng cột */
 }
 
 /* Default Row Widget Style */
 .row-widget {
+    /* background-color: red; */
     display: flex;
     flex-direction: row;
-    gap: 20px; /* Khoảng cách giữa các cột (Column) */
+    /* gap: 20px; Khoảng cách giữa các cột (Column) */
     justify-content: space-between;
     width: 100%; /* Chiếm hết chiều rộng của container */
 }
@@ -78,4 +80,10 @@ body {
     padding: 20px;
     text-align: center;
     border-radius: 5px;
+}
+
+.dynamic-container {
+    display: flex;
+    /* border: 2px solid #ccc; */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
