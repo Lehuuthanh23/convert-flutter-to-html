@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Default Column Widget Style */
+.column-widget {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Khoảng cách giữa các item */
+    width: 100px; /* Đặt chiều rộng cho từng cột */
+}
+
+/* Default Row Widget Style */
+.row-widget {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Khoảng cách giữa các cột (Column) */
+    justify-content: space-between;
+    width: 100%; /* Chiếm hết chiều rộng của container */
+}
+
+/* MainAxisAlignment */
+.main-axis-start {
+    justify-content: flex-start;
+}
+
+.main-axis-center {
+    justify-content: center;
+}
+
+.main-axis-end {
+    justify-content: flex-end;
+}
+
+.main-axis-space-between {
+    justify-content: space-between;
+}
+
+.main-axis-space-around {
+    justify-content: space-around;
+}
+
+.main-axis-space-evenly {
+    justify-content: space-evenly;
+}
+
+/* CrossAxisAlignment */
+.cross-axis-start {
+    align-items: flex-start;
+}
+
+.cross-axis-center {
+    align-items: center;
+}
+
+.cross-axis-end {
+    align-items: flex-end;
+}
+
+.cross-axis-stretch {
+    align-items: stretch;
+}
+
+.cross-axis-baseline {
+    align-items: baseline;
+}
+
+/* Box Style */
+.box {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
